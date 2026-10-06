@@ -560,3 +560,106 @@ button:focus-visible {
     gap: 20px;
   }
 }
+
+@media (min-width: 1600px) {
+  html {
+  scroll-padding-top: 10rem;
+  }
+
+  body {
+    max-width: 3000px;
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  header a img {
+    max-width: 200px;
+  }
+
+  .header-icon {
+    font-size: 2rem;
+  }
+
+  .header-actions {
+    gap: 40px;
+  }
+
+  header nav {
+    gap: 70px;
+  }
+
+  header nav a {
+    font-size: 1.5rem;
+  }
+
+  #hero {
+    min-height: 500px;
+    padding: 50px;
+    margin-top: 30px;
+  }
+
+  .products article {
+    margin: 1rem 4rem;
+  }
+
+  .product-info p {
+    font-size: 1.5rem;
+  }
+
+  .product-info a {
+    font-size: 1.2rem;
+  }
+
+  #why-arcus {
+    min-height: 300px;
+  }
+
+  .benefit-icon {
+    width: 3rem;
+    font-size: 3rem;
+  }
+
+  .benefit h3 {
+    font-size: 1.8rem;
+  }
+
+  .benefit p {
+    font-size: 1.5rem;
+  }
+
+  .discount-circle {
+    width: 11rem;
+  }
+
+  .offer-number {
+    font-size: 2rem;
+  }
+
+  .offer-percent {
+    font-size: 1.5rem;
+  }
+
+  #home-delivery,
+  #about {
+    min-height: 350px;
+  }
+
+  footer {
+    min-height: 100px;
+  }
+
+  .quick-links a {
+    font-size: 1.2rem;
+  }
+}
