@@ -49,7 +49,7 @@ header nav {
 header nav a {
   text-decoration: none;
   color: black;
- }
+}
 
 header {
   display: grid;
@@ -585,13 +585,13 @@ button:focus-visible {
 }
 
 @media (min-width: 1600px) {
-  html {
-  scroll-padding-top: 10rem;
-  }
-
   body {
     max-width: 3000px;
     font-size: 1.5rem;
+  }
+
+  html {
+    scroll-padding-top: 10rem;
   }
 
   h1 {
