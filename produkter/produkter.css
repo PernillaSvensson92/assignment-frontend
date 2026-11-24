@@ -1,0 +1,517 @@
+/* =========================================================
+   PRODUKTER – MOBILE FIRST
+   Basstilarna gäller mobil. Större skärmar läggs på med
+   min-width:
+     - 768px  = surfplatta (2 kolumner)
+     - 1100px = desktop (3 kolumner)
+     - 1600px = stora skärmar (fortfarande 3 kolumner, större kort)
+========================================================= */
+
+
+/* =========================
+   SEKTION
+========================= */
+
+.product-section {
+  padding: 30px 15px 40px;
+}
+
+.product-section__inner {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+/* =========================
+   FILTER
+========================= */
+
+.product-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-button {
+  min-height: 48px;
+  padding: 10px 20px;
+
+  font: inherit;
+  font-weight: bold;
+  color: var(--color-text);
+
+  background-color: white;
+  border: 2px solid var(--color-olive);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.filter-button:hover {
+  background-color: var(--color-cream);
+}
+
+.filter-button[aria-pressed="true"] {
+  color: white;
+  background-color: var(--color-olive);
+}
+
+.product-count {
+  margin: 15px 0 20px;
+
+  font-size: 0.95rem;
+  color: #55554a;
+}
+
+.product-count__clear {
+  min-height: 44px;
+  padding: 0 4px;
+
+  font: inherit;
+  color: var(--color-olive);
+  text-decoration: underline;
+
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+
+/* =========================
+   RUTNÄT
+========================= */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+.product-grid__error {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 25px;
+
+  text-align: center;
+  background-color: var(--color-cream);
+  border-radius: 10px;
+}
+
+
+/* =========================
+   PRODUKTKORT
+========================= */
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+  border: 2px solid var(--color-sand-dark);
+  border-radius: 10px;
+  overflow: hidden;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* display: flex ovan skulle annars slå ut hidden från filtret */
+.product-card[hidden] {
+  display: none;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Kortet man kom till från sökningen */
+.product-card.is-highlighted {
+  border-color: var(--color-green);
+  box-shadow: 0 0 0 4px var(--color-sand), 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Bild – "contain" så att hela produkten syns och inget beskärs */
+
+/* Bildytan har alltid samma fasta höjd och bilden skalas ner för att
+   rymmas (aldrig upp), så stora foton tar inte över kortet. */
+
+.product-card__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  height: 180px;
+  padding: 16px;
+  overflow: hidden;
+
+  background-color: white;
+  border-bottom: 1px solid var(--color-sand);
+}
+
+.product-card__image img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Om bilden saknas */
+
+.product-card__image.is-missing {
+  background-color: var(--color-cream);
+}
+
+.product-card__image.is-missing::after {
+  content: "Bild kommer snart";
+  font-size: 0.9rem;
+  color: #55554a;
+}
+
+/* Text och val */
+
+.product-card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 12px;
+
+  padding: 20px;
+}
+
+.product-card__category {
+  margin: 0;
+
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-green);
+}
+
+.product-card__title {
+  margin: 0;
+}
+
+.product-card__description {
+  margin: 0;
+
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Läs mer */
+
+.product-card__more summary {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+
+  font-weight: bold;
+  color: var(--color-olive);
+  cursor: pointer;
+}
+
+.product-card__more-body {
+  display: grid;
+  gap: 10px;
+
+  padding-bottom: 5px;
+
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.product-card__more-body p {
+  margin: 0;
+}
+
+.product-card__features {
+  margin: 0;
+  padding-left: 1.2rem;
+
+  list-style: disc;
+}
+
+.product-card__features li {
+  margin-top: 4px;
+}
+
+/* Rutan med storleksval – större och tydligare.
+   Allt från den och nedåt hamnar längst ned, så att valen och
+   knapparna ligger i linje mellan korten. */
+
+.product-card__field {
+  display: grid;
+  gap: 8px;
+
+  margin-top: auto;
+  padding: 14px;
+
+  background-color: var(--color-cream);
+  border: 1px solid var(--color-sand);
+  border-radius: 8px;
+}
+
+.product-card__field label {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.product-card__select {
+  width: 100%;
+  min-height: 56px;
+  padding: 12px 46px 12px 14px;
+
+  font: inherit;
+  /* 16px minimum hindrar att iOS zoomar in vid fokus */
+  font-size: 1.1rem;
+  color: var(--color-text);
+
+  background-color: white;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Cpath d='M1 1l7 7 7-7' fill='none' stroke='%236f6b03' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  border: 2px solid var(--color-olive);
+  border-radius: 6px;
+
+  appearance: none;
+  cursor: pointer;
+}
+
+.product-card__select:focus-visible {
+  outline: 3px solid var(--color-green);
+  outline-offset: 2px;
+}
+
+/* Pris */
+
+.product-card__price {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px;
+
+  /* Produkter utan rullista: priset ligger längst ned */
+  margin: auto 0 0;
+}
+
+/* Med rullista är det rullistan som skjuts längst ned */
+.product-card__field + .product-card__price {
+  margin-top: 0;
+}
+
+.product-card__price-prefix,
+.product-card__price-unit {
+  font-size: 1rem;
+  color: #55554a;
+}
+
+.product-card__price-value {
+  font-family: Georgia, serif;
+  font-size: 1.8rem;
+  color: var(--color-olive);
+}
+
+.product-card__price--soldout {
+  font-weight: bold;
+  color: #a32a1b;
+}
+
+/* Felmeddelande om inget alternativ är valt */
+
+.product-card__error {
+  margin: 0;
+
+  font-size: 1rem;
+  font-weight: bold;
+  color: #a32a1b;
+}
+
+/* Summa när antalet är fler än ett */
+
+.product-card__total {
+  margin: -6px 0 0;
+
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Antal + knapp i samma rad (knappen hamnar under på mycket smala kort) */
+
+.product-card__buy {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.quantity {
+  display: flex;
+  flex-shrink: 0;
+
+  background-color: white;
+  border: 2px solid var(--color-olive);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.quantity__btn {
+  width: 48px;
+  min-height: 52px;
+  padding: 0;
+
+  font: inherit;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--color-olive);
+
+  background-color: white;
+  border: 0;
+  cursor: pointer;
+}
+
+.quantity__btn:hover {
+  background-color: var(--color-cream);
+}
+
+.quantity__input {
+  width: 56px;
+  min-height: 52px;
+  padding: 0;
+
+  font: inherit;
+  /* 16px minimum hindrar att iOS zoomar in vid fokus */
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-text);
+
+  background-color: white;
+  border: 0;
+  border-left: 1px solid var(--color-sand);
+  border-right: 1px solid var(--color-sand);
+
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.quantity__input::-webkit-outer-spin-button,
+.quantity__input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+.quantity__input:focus-visible,
+.quantity__btn:focus-visible {
+  outline: 3px solid var(--color-green);
+  outline-offset: -3px;
+}
+
+/* Knapp */
+
+.product-card__button {
+  flex: 1 1 160px;
+  min-height: 56px;
+
+  font: inherit;
+  font-size: 1.05rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.product-card__button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   SURFPLATTA  (768px och uppåt)
+========================================================= */
+
+@media (min-width: 768px) {
+
+  .product-section {
+    padding: 40px 0 60px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+  }
+
+  .product-card__image {
+    height: 200px;
+  }
+
+}
+
+
+/* =========================================================
+   DESKTOP  (1100px och uppåt) – 3 kort i bredd
+========================================================= */
+
+@media (min-width: 1100px) {
+
+  .product-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+}
+
+
+/* =========================================================
+   STORA SKÄRMAR  (1600px och uppåt)
+   Fortfarande 3 kort i bredd, men större
+========================================================= */
+
+@media (min-width: 1600px) {
+
+  .product-section__inner {
+    max-width: 1900px;
+  }
+
+  .product-grid {
+    gap: 45px;
+  }
+
+  .product-card__image {
+    height: 260px;
+    padding: 20px;
+  }
+
+  .product-card__body {
+    padding: 30px;
+    gap: 16px;
+  }
+
+  .product-card__field {
+    padding: 20px;
+  }
+
+  .product-card__select,
+  .product-card__button,
+  .filter-button {
+    min-height: 64px;
+  }
+
+  .quantity__btn,
+  .quantity__input {
+    min-height: 60px;
+  }
+
+  .quantity__btn {
+    width: 56px;
+  }
+
+  .quantity__input {
+    width: 64px;
+  }
+
+  .product-card__price-value {
+    font-size: 2.2rem;
+  }
+
+}

@@ -1,29 +1,39 @@
 <!doctype html>
 <html lang="sv">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../varukorg/cart.css" />
+    <link rel="stylesheet" href="produkter/search.css" />
+    
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <title>arCus – bänkpapper för professionella behandlare</title>
   </head>
   <body>
     <header>
-      <button class="menu-button" aria-label="Meny" aria-expanded="false" aria-controls="main-menu">
+      <button
+        class="menu-button"
+        aria-label="Meny"
+        aria-expanded="false"
+        aria-controls="main-menu"
+      >
         <span class="header-icon">☰</span>
       </button>
 
-      <a href="#">
-        <img src="pictures/arcus-logo.jpg" alt="arCus - till startsidan">
+      <a href="index.html">
+        <img src="pictures/arcus-logo.jpg" alt="arCus - till startsidan" />
       </a>
       <nav class="header-nav" id="main-menu" aria-label="Huvudmeny">
-        <a href="#our-products">Produkter</a>
-        <a href="#about">Om oss</a>
-        <a href="#home-delivery">Leverans</a>
-        <a href="#offer">Storkundsrabatt</a>
-        <a href="#">Kontakt</a>
+        <a href="../index.html" aria-current="page">Hem</a>
+        <a href="../produkter/produkter.html">Produkter</a>
+        <a href="../om-oss/om-oss.html">Om oss</a>
+        <a href="../leverans/leverans.html">Leverans</a>
+        <a href="../storkundsrabatt/storkundsrabatt.html">Storkundsrabatt</a>
+        <a href="../kontakt/kontakt.html">Kontakt</a>
       </nav>
 
       <div class="header-actions">
@@ -71,9 +81,9 @@
           </ul>
 
           <div class="hero-buttons">
-            <a href="#" class="button">Se våra produkter</a>
+            <a href="/produkter/produkter.html" class="button">Se våra produkter</a>
 
-            <a href="#" class="button button-outline">Beställ nu</a>
+          
           </div>
         </div>
         <div class="hero-image">
@@ -81,7 +91,7 @@
             class="hero-img"
             src="pictures/table-paper-stacked-sand.png"
             alt="Blått, grönt och vitt bänkpapper vikt"
-          >
+          />
         </div>
       </section>
 
@@ -93,11 +103,11 @@
             <img
               src="pictures/table-paper-stacked-various-color.png"
               alt="Blått, grönt och vitt bänkpapper"
-            >
+            />
             <div class="product-info">
               <h3>Bänkpapper</h3>
               <p>Svensktillverkat bänkpapper i flera storlekar och färger.</p>
-              <a href="#">Se bänkpapper →</a>
+              <a href="/produkter/produkter.html#bankpapper">Se bänkpapper →</a>
             </div>
           </article>
 
@@ -105,11 +115,11 @@
             <img
               src="pictures/massage-oils-three-bottles.png"
               alt="Tre flaskor olika massageoljor från Wise"
-            >
+            />
             <div class="product-info">
               <h3>Massageoljor</h3>
               <p>Ekologiska massageoljor för professionellt bruk.</p>
-              <a href="#">Se massageoljor →</a>
+              <a href="/produkter/produkter.html#massageoljor">Se massageoljor →</a>
             </div>
           </article>
 
@@ -117,11 +127,11 @@
             <img
               src="pictures/lotus-torky-paper-package.png"
               alt="Hushållspapret Torky original"
-            >
+            />
             <div class="product-info">
               <h3>Förbrukningsartiklar</h3>
               <p>Det du behöver i den dagliga verksamheten.</p>
-              <a href="#">Se förbrukningsartiklar →</a>
+              <a href="/produkter/produkter.html#forbrukning">Se förbrukningsartiklar →</a>
             </div>
           </article>
         </div>
@@ -159,7 +169,8 @@
             <div>
               <h3>Smidig leverans</h3>
               <p>
-                Vi levererar med arCusbilen i flera distrikt eller skickar med DHL.
+                Vi levererar med arCusbilen i flera distrikt eller skickar med
+                DHL.
               </p>
             </div>
           </li>
@@ -186,7 +197,8 @@
           </li>
         </ul>
 
-        <a href="#" class="button offer-button">Läs mer 
+        <a href="/storkundsrabatt/storkundsrabatt.html" class="button offer-button"
+          >Läs mer
           <span class="desktop-only">om storkundsrabatt</span>
         </a>
       </section>
@@ -195,7 +207,7 @@
         <img
           src="pictures/arcus-van-on-the-road.png"
           alt="arCusbilen som är ute och kör på vägen intill en sjö"
-        >
+        />
         <div class="home-delivery-content">
           <h2>Vi kör hem till dig</h2>
           <p>
@@ -206,7 +218,7 @@
               få dina produkter när och där du behöver dem.</span
             >
           </p>
-          <a href="#" class="button">Se leveransschema</a>
+          <a href="/leverans/leverans.html" class="button">Se leveransschema</a>
         </div>
       </section>
 
@@ -214,7 +226,7 @@
         <img
           src="pictures/table-paper-stacked-in-warehouse.png"
           alt="Inplastat bänkpapper i olika färger på lagret med en suddig truck och mer papper i bakgrunden"
-        >
+        />
         <div class="about-content">
           <h2>Om arCus</h2>
           <p>
@@ -225,14 +237,14 @@
               materialval.</span
             >
           </p>
-          <a href="#" class="button">Läs mer om oss</a>
+          <a href="/om-oss/om-oss.html" class="button">Läs mer om oss</a>
         </div>
       </section>
 
       <section id="order">
         <h2>Dags att fylla på förrådet?</h2>
         <p>Se hela vårt sortiment och beställ enkelt.</p>
-        <a href="#" class="button button-light">Se produkter och beställ</a>
+        <a href="/produkter/produkter.html" class="button button-light">Se produkter och beställ</a>
       </section>
     </main>
 
@@ -241,13 +253,13 @@
         class="footer-logo"
         src="pictures/arcus-logo.jpg"
         alt="arCus logotyp"
-      >
+      />
       <nav aria-label="Snabblänkar" class="quick-links">
-        <a href="#our-products">Produkter</a>
-        <a href="#about">Om oss</a>
-        <a href="#home-delivery">Leverans</a>
-        <a href="#offer">Storkundsrabatt</a>
-        <a href="#">Kontakt</a>
+        <a href="/produkter/produkter.html">Produkter</a>
+        <a href="/om-oss/om-oss.html">Om oss</a>
+        <a href="/leverans/leverans.html">Leverans</a>
+        <a href="/storkundsrabatt/storkundsrabatt.html">Storkundsrabatt</a>
+        <a href="/kontakt/kontakt.html">Kontakt</a>
       </nav>
 
       <a href="https://www.instagram.com/arcusbankpapper/">
@@ -255,10 +267,13 @@
           class="footer-instagram"
           src="pictures/instagram.jpg"
           alt="arCus på Instagram"
-        >
+        />
       </a>
     </footer>
 
     <script src="script.js"></script>
+    <script src="../varukorg/cart.js"></script>
+    <script src="produkter/search.js"></script>
+
   </body>
 </html>

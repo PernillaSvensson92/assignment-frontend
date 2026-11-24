@@ -1,0 +1,868 @@
+[
+  {
+    "id": "gron-ultra-lyx",
+    "category": "bankpapper",
+    "discount": "bulk",
+    "name": "arCus Grön Ultra Lyx",
+    "description": "Ett helt svenskproducerat bänkpapper i 100% viskos (träfiber) utan inblandning av polyetenplast. Kraftigt, silkesmjukt och slitstarkt. 23g/m2.",
+    "image": "../pictures/stacked-green.png",
+    "imageAlt": "Förpackning med grönt bänkpapper",
+    "unit": "förp",
+    "variants": [
+      {
+        "id": "gron-ultra-lyx-50x195-cm-300-st-forp",
+        "label": "50×195 cm – 300 st/förp",
+        "price": 910
+      },
+      {
+        "id": "gron-ultra-lyx-60x195-cm-300-st-forp",
+        "label": "60×195 cm – 300 st/förp",
+        "price": 970
+      },
+      {
+        "id": "gron-ultra-lyx-80x195-cm-300-st-forp",
+        "label": "80×195 cm – 300 st/förp",
+        "price": 1170
+      },
+      {
+        "id": "gron-ultra-lyx-50x96-cm-300-st-forp",
+        "label": "50×96 cm – 300 st/förp",
+        "price": 530
+      },
+      {
+        "id": "gron-ultra-lyx-60x96-cm-300-st-forp",
+        "label": "60×96 cm – 300 st/förp",
+        "price": 570
+      },
+      {
+        "id": "gron-ultra-lyx-80x96-cm-300-st-forp",
+        "label": "80×96 cm – 300 st/förp",
+        "price": 690
+      }
+    ]
+  },
+  {
+    "id": "vit-ultra-lyx",
+    "category": "bankpapper",
+    "discount": "bulk",
+    "name": "arCus Vit Ultra Lyx",
+    "description": "Ett helt svenskproducerat bänkpapper i 100% viskos (träfiber) utan inblandning av polyetenplast. Kraftigt, slitstarkt med en extra silkesmjuk yta. 25g/m2.",
+    "image": "../pictures/stacked-white.png",
+    "imageAlt": "Förpackning med vitt bänkpapper",
+    "unit": "förp",
+    "variants": [
+      {
+        "id": "vit-ultra-lyx-50x195-cm-300-st-forp",
+        "label": "50×195 cm – 300 st/förp",
+        "price": 930
+      },
+      {
+        "id": "vit-ultra-lyx-60x195-cm-300-st-forp",
+        "label": "60×195 cm – 300 st/förp",
+        "price": 990
+      },
+      {
+        "id": "vit-ultra-lyx-80x195-cm-300-st-forp",
+        "label": "80×195 cm – 300 st/förp",
+        "price": 1190
+      },
+      {
+        "id": "vit-ultra-lyx-50x96-cm-300-st-forp",
+        "label": "50×96 cm – 300 st/förp",
+        "price": 540
+      },
+      {
+        "id": "vit-ultra-lyx-60x96-cm-300-st-forp",
+        "label": "60×96 cm – 300 st/förp",
+        "price": 580
+      },
+      {
+        "id": "vit-ultra-lyx-80x96-cm-300-st-forp",
+        "label": "80×96 cm – 300 st/förp",
+        "price": 690
+      }
+    ]
+  },
+  {
+    "id": "bla-ultra-lyx",
+    "category": "bankpapper",
+    "discount": "bulk",
+    "name": "arCus Blå Ultra Lyx",
+    "description": "Ett helt svenskproducerat bänkpapper i 100% viskos (träfiber) utan inblandning av polyetenplast. Kraftigt, slitstarkt med en extra silkesmjuk yta. Vårt kraftigaste bänkpapper. 28g/m2.",
+    "image": "../pictures/stacked-blue.png",
+    "imageAlt": "Förpackning med blått bänkpapper",
+    "unit": "förp",
+    "variants": [
+      {
+        "id": "bla-ultra-lyx-60x195-cm-300-st-forp",
+        "label": "60×195 cm – 300 st/förp",
+        "price": 1010
+      },
+      {
+        "id": "bla-ultra-lyx-60x96-cm-300-st-forp",
+        "label": "60×96 cm – 300 st/förp",
+        "price": 590
+      }
+    ]
+  },
+  {
+    "id": "styckvikta-gron-ultra-lyx",
+    "category": "bankpapper",
+    "discount": "bulk",
+    "name": "Styckvikta arCus Grön Ultra Lyx",
+    "description": "Kvalitet: 100% viskos (träfiber) utan inblandning av polyetenplast med kraftig, silkesmjuk och slitstark yta. 23g/m2.",
+    "image": "../pictures/styckvikta-green.png",
+    "imageAlt": "Styckvikta arCus Grön Ultra Lyx",
+    "unit": "förp",
+    "variants": [
+      {
+        "id": "styckvikta-gron-ultra-lyx-50x195-cm-100-st-forp",
+        "label": "50×195 cm – 100 st/förp",
+        "price": 550
+      },
+      {
+        "id": "styckvikta-gron-ultra-lyx-60x195-cm-100-st-forp",
+        "label": "60×195 cm – 100 st/förp",
+        "price": 570
+      },
+      {
+        "id": "styckvikta-gron-ultra-lyx-80x195-cm-100-st-forp",
+        "label": "80×195 cm – 100 st/förp",
+        "price": 680
+      }
+    ]
+  },
+  {
+    "id": "styckvikta-vit-ultra-lyx",
+    "category": "bankpapper",
+    "discount": "bulk",
+    "name": "Styckvikta arCus Vit Ultra Lyx",
+    "description": "Kvalitet: 100% viskos (träfiber) utan inblandning av polyetenplast med kraftig, slitstark och extra silkesmjuk yta. 25g/m2.",
+    "image": "../pictures/styckvikta-white.png",
+    "imageAlt": "Styckvikta arCus Vit Ultra Lyx",
+    "unit": "förp",
+    "variants": [
+      {
+        "id": "styckvikta-vit-ultra-lyx-50x195-cm-100-st-forp",
+        "label": "50×195 cm – 100 st/förp",
+        "price": 560
+      },
+      {
+        "id": "styckvikta-vit-ultra-lyx-60x195-cm-100-st-forp",
+        "label": "60×195 cm – 100 st/förp",
+        "price": 580
+      },
+      {
+        "id": "styckvikta-vit-ultra-lyx-80x195-cm-100-st-forp",
+        "label": "80×195 cm – 100 st/förp",
+        "price": 690
+      }
+    ]
+  },
+  {
+    "id": "styckvikta-bla-ultra-lyx",
+    "category": "bankpapper",
+    "discount": "bulk",
+    "name": "Styckvikta arCus Blå Ultra Lyx",
+    "description": "Kvalitet: 100% viskos (träfiber) utan inblandning av polyetenplast med kraftig, slitstark och extra silkesmjuk yta. 28g/m2.",
+    "image": "../pictures/styckvikta-blue.png",
+    "imageAlt": "Styckvikta arCus Blå Ultra Lyx",
+    "unit": "förp",
+    "variants": [
+      {
+        "id": "styckvikta-bla-ultra-lyx-60x195-cm-100-st-forp",
+        "label": "60×195 cm – 100 st/förp",
+        "price": 590
+      }
+    ]
+  },
+  {
+    "id": "ansiktsduk-krysshal",
+    "category": "bankpapper",
+    "discount": "bulk",
+    "name": "Ansiktsdukar med krysshål",
+    "description": "Tillverkade i samma unika material som vårt egna bänkpapper.",
+    "details": [
+      "Kvalitet: 100% viskos (träfiber) utan inblandning av polyetenplast med kraftig, slitstark och silkesmjuk yta."
+    ],
+    "image": "../pictures/kryss-hole.png",
+    "imageAlt": "Ansiktsdukar med krysshål",
+    "unit": "förp",
+    "selectLabel": "Variant",
+    "variants": [
+      {
+        "id": "ansiktsduk-krysshal-gron-ultra-lyx-40x40-cm-300-st-forp",
+        "label": "Grön Ultra Lyx – 40×40 cm – 300 st/förp",
+        "price": 450
+      },
+      {
+        "id": "ansiktsduk-krysshal-vit-ultra-lyx-40x40-cm-300-st-forp",
+        "label": "Vit Ultra Lyx – 40×40 cm – 300 st/förp",
+        "price": 450
+      }
+    ]
+  },
+  {
+    "id": "skyddsduk",
+    "category": "bankpapper",
+    "discount": "bulk",
+    "name": "Skyddsdukar",
+    "description": "Smidiga dukar som kan användas inom nagel-, ansikts- och skönhetsvård. Tillverkade i samma unika material som vårt egna bänkpapper.",
+    "details": [
+      "Kvalitet: 100% viskos (träfiber) utan inblandning av polyetenplast med kraftig, slitstark och silkesmjuk yta."
+    ],
+    "image": "../pictures/skyddsduk.png",
+    "imageAlt": "Skyddsdukar",
+    "unit": "förp",
+    "selectLabel": "Variant",
+    "variants": [
+      {
+        "id": "skyddsduk-gron-ultra-lyx-40x40-cm-300-st-forp",
+        "label": "Grön Ultra Lyx – 40×40 cm – 300 st/förp",
+        "price": 430
+      },
+      {
+        "id": "skyddsduk-gron-ultra-lyx-50x40-cm-300-st-forp",
+        "label": "Grön Ultra Lyx – 50×40 cm – 300 st/förp",
+        "price": 450
+      },
+      {
+        "id": "skyddsduk-vit-ultra-lyx-40x40-cm-300-st-forp",
+        "label": "Vit Ultra Lyx – 40×40 cm – 300 st/förp",
+        "price": 430
+      },
+      {
+        "id": "skyddsduk-vit-ultra-lyx-50x40-cm-300-st-forp",
+        "label": "Vit Ultra Lyx – 50×40 cm – 300 st/förp",
+        "price": 450
+      }
+    ]
+  },
+  {
+    "id": "wise-natur",
+    "category": "massageoljor",
+    "discount": "oil6",
+    "name": "WISE Natur",
+    "description": "En mild doftfri ekologisk massageolja som har samma professionella grepp, men ingen eterisk olja.",
+    "details": [
+      "Här kan du själv välja inriktning genom att tillsätta eteriska oljor. Du kan använda Nature på doftkänsliga och extremt känsliga personer, även barn och sjuka."
+    ],
+    "image": "../pictures/nature.png",
+    "imageAlt": "WISE Natur",
+    "unit": "st",
+    "variants": [
+      {
+        "id": "wise-natur-500-ml-med-dospump",
+        "label": "500 ml med dospump",
+        "price": 320
+      },
+      {
+        "id": "wise-natur-1000-ml",
+        "label": "1000 ml",
+        "price": 490
+      }
+    ]
+  },
+  {
+    "id": "wise-classic",
+    "category": "massageoljor",
+    "discount": "oil6",
+    "name": "WISE Classic",
+    "description": "En ekologisk massageolja med uppfriskande och mild doft av mynta och apelsin.",
+    "details": [
+      "Lindrar fysiska spänningar, motverkar svullnader och vätskeansamlingar och stimulerar cirkulationen i muskler och lymfa. Ger bra grepp vid muskelmassage."
+    ],
+    "image": "../pictures/classic.png",
+    "imageAlt": "WISE Classic",
+    "unit": "st",
+    "variants": [
+      {
+        "id": "wise-classic-500-ml-med-dospump",
+        "label": "500 ml med dospump",
+        "price": 325
+      },
+      {
+        "id": "wise-classic-1000-ml",
+        "label": "1000 ml",
+        "price": 500
+      }
+    ]
+  },
+  {
+    "id": "wise-relax",
+    "category": "massageoljor",
+    "discount": "oil6",
+    "name": "WISE Relax",
+    "description": "En ekologisk antistressolja med kryddig doft av olibanum och lavendel.",
+    "details": [
+      "Inriktad på att få kunden avslappnad, både fysiskt och mentalt. Passar stressade, spända, överaktiva kunder som har svårt att släppa taget om tankarna."
+    ],
+    "image": "../pictures/relax.png",
+    "imageAlt": "WISE Relax",
+    "unit": "st",
+    "variants": [
+      {
+        "id": "wise-relax-500-ml-med-dospump",
+        "label": "500 ml med dospump",
+        "price": 325
+      },
+      {
+        "id": "wise-relax-1000-ml",
+        "label": "1000 ml",
+        "price": 500
+      }
+    ]
+  },
+  {
+    "id": "wise-energy",
+    "category": "massageoljor",
+    "discount": "oil6",
+    "name": "WISE Energy",
+    "description": "En värmande, cirkulationsfrämjande och uppiggande ekologisk massageolja. Passar för idrottsmassage, mindre smärtor, träningsvärk, före och efter träning samt för förkylningsåkommor.",
+    "image": "../pictures/energy.png",
+    "imageAlt": "WISE Energy",
+    "unit": "st",
+    "variants": [
+      {
+        "id": "wise-energy-500-ml-med-dospump",
+        "label": "500 ml med dospump",
+        "price": 325
+      },
+      {
+        "id": "wise-energy-1000-ml",
+        "label": "1000 ml",
+        "price": 500
+      }
+    ]
+  },
+  {
+    "id": "follinge-neutral",
+    "category": "massageoljor",
+    "discount": "oil6",
+    "name": "Föllinge Neutral",
+    "description": "En massageolja utan eteriska oljor. Utmärkt att doftsätta med egna eteriska oljor.",
+    "image": "../pictures/neutral.png",
+    "imageAlt": "Föllinge Neutral",
+    "unit": "st",
+    "variants": [
+      {
+        "id": "follinge-neutral-1000-ml",
+        "label": "1000 ml",
+        "price": 490
+      }
+    ]
+  },
+  {
+    "id": "follinge-harmony",
+    "category": "massageoljor",
+    "discount": "oil6",
+    "name": "Föllinge Harmony",
+    "description": "Ökar välmåendet, löser upp stress och skapar förutsättningar för harmoni och balans.",
+    "image": "../pictures/harmony.png",
+    "imageAlt": "Föllinge Harmony",
+    "unit": "st",
+    "variants": [
+      {
+        "id": "follinge-harmony-1000-ml",
+        "label": "1000 ml",
+        "price": 500,
+        "outOfStock": true
+      }
+    ]
+  },
+  {
+    "id": "follinge-relaxing",
+    "category": "massageoljor",
+    "discount": "oil6",
+    "name": "Föllinge Relaxing",
+    "description": "En lugnande olja som löser upp muskelspänningar och stress. Främjar en god natts sömn.",
+    "image": "../pictures/relaxing.png",
+    "imageAlt": "Föllinge Relaxing",
+    "unit": "st",
+    "variants": [
+      {
+        "id": "follinge-relaxing-1000-ml",
+        "label": "1000 ml",
+        "price": 500
+      }
+    ]
+  },
+  {
+    "id": "follinge-warming",
+    "category": "massageoljor",
+    "discount": "oil6",
+    "name": "Föllinge Warming",
+    "description": "Ger en värmande känsla till muskler och leder. Kan med fördel användas vid reumatiska smärtor och kalla fötter.",
+    "image": "../pictures/warming.png",
+    "imageAlt": "Föllinge Warming",
+    "unit": "st",
+    "variants": [
+      {
+        "id": "follinge-warming-1000-ml",
+        "label": "1000 ml",
+        "price": 500
+      }
+    ]
+  },
+  {
+    "id": "follinge-linimentlotion-arnica",
+    "category": "massageoljor",
+    "name": "Föllinge Linimentlotion med arnica",
+    "description": "En linimentlotion som kan användas vid spända muskler, ömmande leder eller ”kryp i benen”.",
+    "details": [
+      "Detta mjukgörande liniment är mycket koncentrerat varvid endast ett tunt lager behöver appliceras på det ansatta området."
+    ],
+    "image": "../pictures/linimentlotion.png",
+    "imageAlt": "Föllinge Linimentlotion med arnica",
+    "unit": "st",
+    "variants": [
+      {
+        "id": "follinge-linimentlotion-arnica-100-ml",
+        "label": "100 ml",
+        "price": 190
+      },
+      {
+        "id": "follinge-linimentlotion-arnica-500-ml",
+        "label": "500 ml",
+        "price": 420
+      }
+    ]
+  },
+  {
+    "id": "follinge-eterisk-olja",
+    "category": "massageoljor",
+    "name": "Föllinge Eterisk olja – ekologisk",
+    "description": "Föllinge eteriska oljor är ekologiska. De säljs i 10 ml flaskor och finns i 5 olika dofter.",
+    "details": [
+      "Förutom att du kan använda de eteriska oljorna i aromalampor kan du enkelt tillsätta den doft du önskar i Föllinge neutral massagelotion eller massageolja."
+    ],
+    "image": "../pictures/essential-oils.png",
+    "imageAlt": "Föllinge Eterisk olja – ekologisk",
+    "unit": "st",
+    "selectLabel": "Doft",
+    "variants": [
+      {
+        "id": "follinge-eterisk-olja-apelsin-10-ml",
+        "label": "Apelsin, 10 ml",
+        "price": 59
+      },
+      {
+        "id": "follinge-eterisk-olja-citron-10-ml",
+        "label": "Citron, 10 ml",
+        "price": 69
+      },
+      {
+        "id": "follinge-eterisk-olja-eukalyptus-10-ml",
+        "label": "Eukalyptus, 10 ml",
+        "price": 59
+      },
+      {
+        "id": "follinge-eterisk-olja-lavendel-10-ml",
+        "label": "Lavendel, 10 ml",
+        "price": 104
+      },
+      {
+        "id": "follinge-eterisk-olja-pepparmynta-10-ml",
+        "label": "Pepparmynta, 10 ml",
+        "price": 104
+      }
+    ]
+  },
+  {
+    "id": "linnex-stick",
+    "category": "massageoljor",
+    "name": "Linnex Stick",
+    "description": "Linnex stick ska inte masseras in som de flesta liniment, utan appliceras med 1–2 drag på det aktuella stället.",
+    "image": "../pictures/linnex-stick.png",
+    "imageAlt": "Linnex Stick",
+    "unit": "st",
+    "selectLabel": "Variant",
+    "variants": [
+      {
+        "id": "linnex-stick-stick",
+        "label": "Stick",
+        "price": 126
+      },
+      {
+        "id": "linnex-stick-stick-hel-lada-om-12-st-forp-112-kr-st",
+        "label": "Stick – hel låda om 12 st/förp (112 kr/st)",
+        "price": 1344,
+        "unit": "förp"
+      }
+    ]
+  },
+  {
+    "id": "linnex-kram",
+    "category": "massageoljor",
+    "name": "Linnex Kräm",
+    "description": "Linnex kräm ska masseras in som ett vanligt liniment.",
+    "image": "../pictures/linnex-cream.png",
+    "imageAlt": "Linnex Kräm",
+    "unit": "st",
+    "selectLabel": "Variant",
+    "variants": [
+      {
+        "id": "linnex-kram-kram-100-ml",
+        "label": "Kräm 100 ml",
+        "price": 153
+      },
+      {
+        "id": "linnex-kram-kram-500-ml",
+        "label": "Kräm 500 ml",
+        "price": 490
+      },
+      {
+        "id": "linnex-kram-kram-100-ml-hel-lada-om-12-st-forp-142-kr-st",
+        "label": "Kräm 100 ml – hel låda om 12 st/förp (142 kr/st)",
+        "price": 1704,
+        "unit": "förp"
+      }
+    ]
+  },
+  {
+    "id": "doserings-pump",
+    "category": "massageoljor",
+    "name": "Doseringspump till alla 1000ml flaska",
+    "description": "Doseringspump som passar alla 1000ml flaskor",
+    "image": "../pictures/.png",
+    "imageAlt": "Doserings pump",
+    "unit": "st",
+    "variants": [
+      {
+        "id": "wise-natur-doseringspump-till-1000-ml-flaska",
+        "label": "Doseringspump till 1000 ml flaska",
+        "price": 40
+      }
+    ]
+  },
+  {
+    "id": "ansiktsservetter",
+    "category": "forbrukning",
+    "name": "Ansiktsservetter",
+    "description": "Pappersservetter 150 st tillverkat av 100 % ren cellulosa.",
+    "image": "../pictures/servett.png",
+    "imageAlt": "Ansiktsservetter",
+    "unit": "förp",
+    "variants": [
+      {
+        "id": "ansiktsservetter-150-st-forp",
+        "label": "150 st/förp",
+        "price": 21
+      }
+    ]
+  },
+  {
+    "id": "airlaid-hygiendukar",
+    "category": "forbrukning",
+    "name": "Airlaid hygiendukar",
+    "description": "Smidiga dukar i fin mjuk kvalitet som kan användas av bl.a. hudterapeuter, fotvårdare, tandläkare, på spa och förskolor. Färg: vit.",
+    "details": [
+      "Airlaid är tillverkad av luftsyreblekt träfibermassa och är högabsorberande, slit- och vätstark. Materialet går utmärkt att autoklavera och att kompostera.",
+      "Användningsområde: Klämduk/nageldesign, Torkduk/tatuering, Dentalservett & huvud/fotduk."
+    ],
+    "image": "../pictures/hygienduk.png",
+    "imageAlt": "Airlaid hygiendukar",
+    "unit": "förp",
+    "variants": [
+      {
+        "id": "airlaid-hygiendukar-20x20-cm-ca-1200-st-forp",
+        "label": "20×20 cm, ca 1200 st/förp",
+        "price": 490
+      },
+      {
+        "id": "airlaid-hygiendukar-40x40-cm-ca-450-st-forp",
+        "label": "40×40 cm, ca 450 st/förp",
+        "price": 530
+      },
+      {
+        "id": "airlaid-hygiendukar-50x40-cm-ca-360-st-forp",
+        "label": "50×40 cm, ca 360 st/förp",
+        "price": 530
+      }
+    ]
+  },
+  {
+    "id": "dax-clinical-handdesinfektion",
+    "category": "forbrukning",
+    "name": "DAX Clinical handdesinfektion, 600 ml",
+    "description": "En hygienisk handdesinfektion som är utprovad i samarbete med svensk sjukvård. Effektiv mot bakterier, jästsvamp och olika virus som influensavirus.",
+    "details": [
+      "Dax Clinical innehåller 75 vol% denaturerad etanol samt två återfuktande ämnen som ska minska risken för att din hud ska torka ut."
+    ],
+    "image": "../pictures/dax-handdes.png",
+    "imageAlt": "DAX Clinical handdesinfektion, 600 ml",
+    "unit": "st",
+    "variants": [
+      {
+        "id": "dax-clinical-handdesinfektion-600-ml",
+        "label": "600 ml",
+        "price": 59
+      }
+    ]
+  },
+  {
+    "id": "dax-alcogel-85",
+    "category": "forbrukning",
+    "name": "DAX Alcogel 85, 600 ml",
+    "description": "En halvgel sammansatt av tre olika alkoholer med etanol som huvudkomponent. Alkoholstyrkan är 85 volymprocent.",
+    "details": [
+      "DAX Alcogel 85 verkar snabbt och klibbar inte efter avdunstning. Tillsatsen av glycerin som återfuktningsmedel gör att huden behåller sin naturliga fuktighetsbalans och hindrar därmed uttorkning."
+    ],
+    "image": "../pictures/dax-alcogel.png",
+    "imageAlt": "DAX Alcogel 85, 600 ml",
+    "unit": "st",
+    "variants": [
+      {
+        "id": "dax-alcogel-85-600-ml",
+        "label": "600 ml",
+        "price": 64
+      }
+    ]
+  },
+  {
+    "id": "dax-ytdesinfektion-plus",
+    "category": "forbrukning",
+    "name": "DAX Ytdesinfektion Plus, 1000 ml",
+    "description": "Avsedd för desinfektion av släta ytor, t.ex. undersökningsbritsar, bänkar, bord etc. Effektiv mot bakterier, svampar och olika typer av virus.",
+    "details": [
+      "DAX Ytdesinfektion Plus används inom hälso-, sjuk- och tandvård samt hos veterinärkliniker. Kan även användas inom livsmedelshantering och barnomsorg."
+    ],
+    "image": "../pictures/dax-ytdes.png",
+    "imageAlt": "DAX Ytdesinfektion Plus, 1000 ml",
+    "unit": "st",
+    "variants": [
+      {
+        "id": "dax-ytdesinfektion-plus-1000-ml",
+        "label": "1000 ml",
+        "price": 59
+      }
+    ]
+  },
+  {
+    "id": "provita-munskydd",
+    "category": "forbrukning",
+    "name": "Provita medical svensktillverkade & CE-märkta munskydd",
+    "description": "Munskydd för engångsbruk med 3 lagers uppbyggnad. Högsta skyddsklassen (IIR) med en bakteriell filtrationskapacitet på 99,9 % och CE-märkta.",
+    "details": [
+      "Munskyddet har en näsklämma för bra passform och elastiska öronband för att vara bekväma att bära. De har ett lågt andningsmotstånd för att vara lättare att andas genom och är allergivänliga.",
+      "Munskyddet är gjort för att fånga mikroorganismer i utandningsluften från användaren och skydda omgivningen från risken att få en infektion. Munskyddet skyddar även användaren från synliga droppar och stänk från kroppsvätskor, s.k. droppsmitta."
+    ],
+    "image": "../pictures/munnskydd.png",
+    "imageAlt": "Provita medical svensktillverkade & CE-märkta munskydd",
+    "unit": "förp",
+    "variants": [
+      {
+        "id": "provita-munskydd-50-pack",
+        "label": "50-pack",
+        "price": 149
+      }
+    ]
+  },
+  {
+    "id": "follinge-handtval",
+    "category": "forbrukning",
+    "name": "Föllinge Vegetabilisk handtvål",
+    "description": "En dryg, mild, ej uttorkande och diskret doftsatt handtvål. Finns både i 200 ml flaska med pump samt i 1000 ml flaska utan pump.",
+    "image": "../pictures/veg-handtval.png",
+    "imageAlt": "Föllinge Vegetabilisk handtvål",
+    "unit": "st",
+    "variants": [
+      {
+        "id": "follinge-handtval-200-ml",
+        "label": "200 ml",
+        "price": 55
+      },
+      {
+        "id": "follinge-handtval-1000-ml",
+        "label": "1000 ml",
+        "price": 169
+      }
+    ]
+  },
+  {
+    "id": "gunry-handtval-vanilla-honey",
+    "category": "forbrukning",
+    "name": "Gunry Handtvål Vanilla & Honey, 500 ml med pump",
+    "description": "Tillverkad av milda ingredienser som skonsamt tvättar rent och gör huden mjuk och fräsch.",
+    "image": "../pictures/gunry-tval.png",
+    "imageAlt": "Gunry Handtvål Vanilla & Honey, 500 ml med pump",
+    "unit": "st",
+    "variants": [
+      {
+        "id": "gunry-handtval-vanilla-honey-500-ml-med-pump",
+        "label": "500 ml med pump",
+        "price": 27
+      }
+    ]
+  },
+  {
+    "id": "abena-nitrilhandskar",
+    "category": "forbrukning",
+    "name": "Abena puderfria blå nitrilhandskar",
+    "description": "En bekväm, mjuk och flexibel, puderfri nitrilhandske som ger säkerhet i många situationer. Handskarna innehåller inte latex.",
+    "details": [
+      "Full frihet i rörelse och utmärkt flexibilitet som ger mindre trötthetskänsla. Egenskaper:"
+    ],
+    "features": [
+      "100% latexfri undersökningshandske gjord av hållbar nitril, eliminerar risken för allergiska reaktioner, typ I, som associeras med naturlatex.",
+      "Högelastiska och mjuka",
+      "Rullkant för enklare påtagning",
+      "Texturerade fingertoppar för bästa grepp i alla lägen",
+      "Säker för livsmedelshantering och inom sjukvården",
+      "Skyddar mot ett brett spektrum av kemikalier"
+    ],
+    "image": "../pictures/nitrile-gloves.png",
+    "imageAlt": "Abena puderfria blå nitrilhandskar",
+    "unit": "förp",
+    "variants": [
+      {
+        "id": "abena-nitrilhandskar-s-150-st-forp",
+        "label": "S – 150 st/förp",
+        "price": 99
+      },
+      {
+        "id": "abena-nitrilhandskar-m-150-st-forp",
+        "label": "M – 150 st/förp",
+        "price": 99
+      },
+      {
+        "id": "abena-nitrilhandskar-l-150-st-forp",
+        "label": "L – 150 st/förp",
+        "price": 99
+      },
+      {
+        "id": "abena-nitrilhandskar-xl-150-st-forp",
+        "label": "XL – 150 st/förp",
+        "price": 99
+      }
+    ]
+  },
+  {
+    "id": "power-wash",
+    "category": "forbrukning",
+    "name": "Power Wash",
+    "description": "Ett svensktillverkat, nytt och modernt maskintvättmedel. Lågskummande och koncentrerat med Liposystem avsett för vittvätt. Förtvätt är ej nödvändig.",
+    "details": [
+      "Tvättmedlet innehåller fyra olika sorters enzymer som tar hand om de flesta fläckar, t.ex. blod, choklad, ägg och olja.",
+      "Ett billigt fosfatfritt högeffektivt koncentrat, 4 kg tvättmedel räcker upp till 310 tvättar i en normalstor 3-4 kg maskin. Innehåller ej zeoliter, ett mjukgörande ämne som orsakar avlagringar i tvättmaskinens slangar och pumphus, och innehåller ej något utfyllnadsmaterial (pimpsten, vulkanaska eller säll-stoff) vilket är vanligt hos andra tvättmedel. Det innehåller ej heller något blekmedel och är endast svagt parfymerat. Detta gör att Nature Power Wash är utmärkt för personer med allergiska problem.",
+      "Dosering: 0,15 – 0,2 dl till en 3-4 kg maskin beroende på vattnets hårdhetsgrad och 0,2 – 0,3 till en 5-8 kg maskin beroende på vattnets hårdhetsgrad."
+    ],
+    "image": "../pictures/power-wash.png",
+    "imageAlt": "Power Wash",
+    "unit": "förp",
+    "variants": [
+      {
+        "id": "power-wash-4-kg",
+        "label": "4 kg",
+        "price": 380
+      }
+    ]
+  },
+  {
+    "id": "power-wash-tripple-x-colour",
+    "category": "forbrukning",
+    "name": "Power Wash Tripple-X Colour",
+    "description": "Ett svensktillverkat, nytt och modernt maskintvättmedel. Lågskummande och koncentrerat med Liposystem avsett för kulör och fintvätt. Förtvätt är ej nödvändig.",
+    "details": [
+      "Tvättmedlet innehåller fyra olika sorters enzymer som tar hand om de flesta fläckar, t.ex. blod, choklad, ägg och olja.",
+      "Ett billigt fosfatfritt högeffektivt koncentrat, 4 kg tvättmedel räcker upp till 310 tvättar i en normalstor 3-4 kg maskin. Innehåller ej zeoliter, ett mjukgörande ämne som orsakar avlagringar i tvättmaskinens slangar och pumphus, och innehåller ej något utfyllnadsmaterial (pimpsten, vulkanaska eller säll-stoff) vilket är vanligt hos andra tvättmedel. Det innehåller ej heller något blekmedel och är endast svagt parfymerat. Detta gör att Nature Power Wash Tripple-X är utmärkt för personer med allergiska problem.",
+      "Dosering: 0,15 – 0,2 dl till en 3-4 kg maskin beroende på vattnets hårdhetsgrad och 0,2 – 0,3 till en 5-8 kg maskin beroende på vattnets hårdhetsgrad."
+    ],
+    "image": "../pictures/power-wash-tripple-x-colour.png",
+    "imageAlt": "Power Wash Tripple-X Colour",
+    "unit": "förp",
+    "variants": [
+      {
+        "id": "power-wash-tripple-x-colour-4-kg",
+        "label": "4 kg",
+        "price": 380
+      }
+    ]
+  },
+  {
+    "id": "serla-toalettpapper",
+    "category": "forbrukning",
+    "name": "Serla Miljöval toalettpapper",
+    "description": "Ett 3-lagers papper som är vänligt både mot huden och miljön. Nu mjukare toalettpapper, högre kvalitet och skönare känsla.",
+    "details": [
+      "Serla är ett smart, miljövänligt varumärke som ger möjlighet att göra smarta val i vardagen – utan att tumma på kvaliteten. Säljs i 6-pack."
+    ],
+    "image": "../pictures/serla.png",
+    "imageAlt": "Serla Miljöval toalettpapper",
+    "unit": "förp",
+    "variants": [
+      {
+        "id": "serla-toalettpapper-6-pack",
+        "label": "6-pack",
+        "price": 44
+      }
+    ]
+  },
+  {
+    "id": "lotus-torky-original",
+    "category": "forbrukning",
+    "name": "Lotus Torky Original",
+    "description": "Ett mycket vätstarkt och luddfritt papper som klarar det mesta. Säljs i 2-pack.",
+    "details": [
+      "En rulle Lotus Torky innehåller hela 100 m, vilket är ca sex gånger så långt som en vanlig hushållsrulle."
+    ],
+    "image": "../pictures/lotus-torky.png",
+    "imageAlt": "Lotus Torky Original",
+    "unit": "förp",
+    "variants": [
+      {
+        "id": "lotus-torky-original-2-pack",
+        "label": "2-pack",
+        "price": 54
+      }
+    ]
+  },
+  {
+    "id": "lotus-torky-hallare",
+    "category": "forbrukning",
+    "name": "Lotus Torky hållare",
+    "description": "Kan både stå och fästas på väggen, du väljer själv. Finns i färgen vit.",
+    "image": "../pictures/lotus-dispenser.png",
+    "imageAlt": "Lotus Torky hållare",
+    "unit": "st",
+    "variants": [
+      {
+        "id": "lotus-torky-hallare-1-pack",
+        "label": "1-pack",
+        "price": 85
+      }
+    ]
+  },
+  {
+    "id": "avfallspase",
+    "category": "forbrukning",
+    "name": "Avfallspåse",
+    "description": "Extra stark 25 st à 30 liter med knythandtag. Tillverkad av 100 % återvunnen plast.",
+    "image": "../pictures/trash-bag.png",
+    "imageAlt": "Avfallspåse",
+    "unit": "st",
+    "variants": [
+      {
+        "id": "avfallspase-25-st",
+        "label": "25 st",
+        "price": 20
+      }
+    ]
+  },
+  {
+    "id": "sopsack",
+    "category": "forbrukning",
+    "name": "Sopsäck",
+    "description": "Stark transparent sopsäck 10 st à 125 liter knytsäck. Tillverkad av 100 % återvunnen plast.",
+    "image": "../pictures/trashbag-big.png",
+    "imageAlt": "Sopsäck",
+    "unit": "st",
+    "variants": [
+      {
+        "id": "sopsack-10-st",
+        "label": "10 st",
+        "price": 42
+      }
+    ]
+  }
+]

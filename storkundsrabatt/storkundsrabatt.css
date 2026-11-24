@@ -1,0 +1,462 @@
+.discount-intro {
+  background-color: var(--color-sand-dark);
+  display: flex;
+}
+
+.discount-intro {
+  padding: 45px 20px;
+  background-color: var(--color-sand);
+  text-align: center;
+}
+
+.intro-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.intro-content h1 {
+  margin: 5px 0 12px;
+}
+
+.intro-content p {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.eyebrow {
+  display: block;
+
+  color: var(--color-green);
+
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+
+/* =========================
+   DISCOUNT SECTION
+========================= */
+
+.discount-section {
+  padding: 40px 20px;
+}
+
+.section-heading {
+  max-width: 700px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.section-heading p {
+  margin: 0;
+}
+
+
+/* Rabattkorten */
+
+.discount-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.discount-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  padding: 20px;
+
+  border: 1px solid var(--color-sand);
+  border-radius: 12px;
+}
+
+.discount-card-highlight {
+  background-color: var(--color-sand);
+  border-color: var(--color-sand);
+}
+
+.discount-number {
+  width: 75px;
+  height: 75px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background-color: var(--color-sand-dark);
+
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.discount-number span {
+  font-size: 1rem;
+}
+
+.discount-card h3 {
+  margin-bottom: 5px;
+}
+
+.discount-card p {
+  margin: 0;
+}
+
+
+/* Information */
+
+.discount-info {
+  display: flex;
+  gap: 15px;
+
+  margin-top: 25px;
+  padding: 20px;
+
+  background-color: #f5f4e9;
+  border-radius: 10px;
+}
+
+.discount-info h3 {
+  margin-bottom: 5px;
+}
+
+.discount-info p {
+  margin: 0;
+}
+
+.info-icon {
+  color: var(--color-green);
+  font-size: 1.8rem;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================
+   MASSAGE OFFER
+========================= */
+
+.massage-offer {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+
+  margin: 0 15px;
+  padding: 30px 20px;
+
+  background-color: var(--color-sand);
+
+  border-radius: 20px;
+}
+
+.massage-offer-content p {
+  margin: 0 0 20px;
+}
+
+.massage-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 90px;
+  height: 90px;
+
+  border-radius: 50%;
+
+  background-color: var(--color-sand-dark);
+
+  color: var(--color-green);
+
+  font-size: 2.5rem;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.button {
+  display: inline-block;
+
+  padding: 10px 15px;
+
+  border-radius: 6px;
+  border: 1px solid var(--color-olive);
+
+  background-color: var(--color-olive);
+
+  color: white;
+  text-decoration: none;
+}
+
+.button-light {
+  background-color: white;
+  border-color: white;
+  color: black;
+}
+
+
+/* =========================
+   PRICE EXAMPLES
+========================= */
+
+.price-examples {
+  padding: 20px 20px;
+}
+
+.example-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.example-card {
+  overflow: hidden;
+
+  border: 1px solid var(--color-sand);
+  border-radius: 10px;
+}
+
+.example-card img {
+  display: block;
+
+  width: 100%;
+  height: 200px;
+
+  object-fit: cover;
+}
+
+.example-content {
+  padding: 18px;
+}
+
+.example-content h3 {
+  margin-bottom: 8px;
+}
+
+.example-content p {
+  margin: 0 0 12px;
+}
+
+.price {
+  color: var(--color-green);
+}
+
+.price strong {
+  font-size: 1.4rem;
+}
+
+.old-price {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.order-now-button {
+  display: block;
+  margin: 24px auto 0px;
+  font-size: 1rem;
+  padding: 1em 2em ;
+}
+
+
+/* =========================
+   CONTACT CTA
+========================= */
+
+.discount-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 35px 20px;
+
+  background-color: var(--color-sand-dark);
+
+  color: white;
+}
+
+.discount-contact h2 {
+  margin-bottom: 5px;
+}
+
+.discount-contact p {
+  margin: 0;
+}
+
+
+@media (min-width: 768px) {
+  
+
+  /* Intro */
+
+  .discount-intro {
+    padding: 70px 30px;
+    border-radius: 1rem;
+  }
+
+  .intro-content h1 {
+    font-size: 2.5rem;
+  }
+
+
+  /* Rabatt */
+
+  .discount-section {
+    padding: 60px 50px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 25px;
+  }
+
+
+  .discount-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  .discount-card {
+    padding: 30px;
+  }
+
+  .discount-number {
+    width: 100px;
+    height: 100px;
+
+    font-size: 2.2rem;
+  }
+
+  .discount-number span {
+    font-size: 1.2rem;
+  }
+
+  .discount-info {
+    max-width: 800px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Massageolja */
+
+  .massage-offer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+
+    margin: 0 30px;
+
+    padding: 40px 50px;
+  }
+
+  .massage-icon {
+    width: 120px;
+    height: 120px;
+
+    font-size: 3rem;
+  }
+
+
+  /* Prisexempel */
+
+  .price-examples {
+    padding: 40px 50px;
+  }
+
+  .price-examples .section-heading {
+  width: 100%;
+  max-width: none;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto
+  }
+
+  .example-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .example-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  }
+
+  /* CTA */
+
+  .discount-contact {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 40px 50px;
+  }
+
+}
+@media (min-width: 1600px) {
+   .discount-intro {
+    padding: 100px 50px;
+  }
+
+  .discount-section,
+  .price-examples {
+    padding: 40px;
+   
+  }
+
+  .discount-section {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr ));
+    gap: 16px;
+    align-items: stretch;
+  }
+
+  .section-heading {
+    grid-column: 1 / -1;
+  }
+
+  .discount-cards {
+    display: contents;
+  }
+
+  .discount-card,
+  .discount-info {
+    margin: 0;
+  }
+  
+
+  .discount-card {
+    padding: 40px;
+  }
+
+  .discount-number {
+    width: 130px;
+    height: 130px;
+  }
+
+  .massage-offer {
+    padding: 60px 80px;
+  }
+
+  .order-now-button {
+  font-size: 1.5rem;
+}
+
+
+}
+

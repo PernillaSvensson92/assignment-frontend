@@ -1,0 +1,362 @@
+/* =========================================================
+   LEVERANS – MOBILE FIRST
+   Basstilarna gäller mobil. Större skärmar läggs på med
+   min-width:
+     - 481px  = stor mobil / liten surfplatta
+     - 769px  = surfplatta liggande / desktop
+========================================================= */
+
+
+/* =========================
+   LEVERANS HERO
+========================= */
+
+.page-hero {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  min-height: 300px;
+  padding: 35px 20px;
+
+  background-color: var(--color-sand);
+  border-radius: 10px;
+
+  margin: 0 0 50px;
+}
+
+.page-hero__content {
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* "Leverans med arCus-bilen" */
+.page-hero .eyebrow {
+  display: block;
+  margin-bottom: 12px;
+
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-green);
+}
+
+.page-hero p {
+  max-width: 800px;
+  margin: 0 auto;          /* centrerar rutan, inte bara texten */
+  line-height: 1.7;
+}
+
+.page-hero h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   SEKTIONER
+========================= */
+
+.section {
+  width: 100%;
+  padding: 40px 15px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   LEVERANS – BILD OCH TEXT
+========================= */
+
+.split-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: stretch;
+  gap: 30px;
+
+  width: 100%;
+}
+
+.split-section > * {
+  min-width: 0;
+}
+
+.split-section {
+  max-width: none;                                    
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 60px;
+}
+
+
+.visual-panel {
+  min-height: 420px;
+}
+
+
+.split-section > div:not(.visual-panel) {
+  align-self: center;
+  max-width: 700px;
+}
+
+/* Bild */
+
+.visual-panel {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+
+  border-radius: 10px;
+}
+
+.visual-panel img {
+  position: absolute;
+  inset: 0;
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Text */
+
+.split-section h2 {
+  margin-bottom: 20px;
+}
+
+.split-section p {
+  line-height: 1.7;
+}
+
+.persomal-delivery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* =========================
+   CHECKLISTA
+========================= */
+
+.check-list {
+  display: grid;
+  gap: 15px;
+
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.check-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  line-height: 1.6;
+}
+
+.check-list i {
+  color: var(--color-olive);
+  margin-top: 5px;
+}
+
+
+/* =========================
+   SÅ GÅR DU VIDARE
+========================= */
+
+.section--cream {
+  background-color: var(--color-cream);
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-heading p {
+  line-height: 1.7;
+}
+
+
+/* Tre steg */
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.benefit {
+  background-color: white;
+  border: 1px solid var(--color-sand);
+  border-radius: 6px;
+  padding: 25px;
+
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+.benefit:hover {
+  transform: translateY(-4px);
+}
+
+.benefit i {
+  display: inline-block;
+
+  font-size: 32px;
+  color: var(--color-green);
+
+  margin-bottom: 20px;
+}
+
+.benefit h3 {
+  margin-bottom: 15px;
+}
+
+.benefit p {
+  line-height: 1.7;
+}
+
+.section--cream .container {
+  margin: 0 auto;
+}
+
+/* =========================
+   AVSLUTANDE CTA
+========================= */
+
+.callout {
+  width: 100%;
+  background-color: var(--color-sand-dark);
+  border-radius: 0;          /* full bredd ska inte ha rundade hörn */
+  padding: 50px 20px;
+  margin: 50px 0;
+}
+
+.callout .container {
+  margin: 0 auto;            /* centrerar innehållet på sidan */
+}
+
+.callout-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;   /* text och knapp samlas i mitten */
+  gap: 40px;
+}
+.callout h2 {
+  margin-bottom: 10px;
+}
+
+.callout p {
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   STOR MOBIL / LITEN SURFPLATTA  (481px och uppåt)
+========================================================= */
+
+@media (min-width: 481px) {
+
+  .page-hero {
+    min-height: 350px;
+    padding: 40px 25px;
+  }
+
+  /* Justera till din globala h1-storlek om den är en annan */
+  .page-hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .section {
+    padding: 50px 0px;
+  }
+
+  .benefit {
+    padding: 30px;
+  }
+
+  .callout {
+    padding: 40px;
+  }
+
+}
+
+.personal-delivery {
+  padding: 10px 20px;
+}
+
+/* =========================================================
+   SURFPLATTA LIGGANDE / DESKTOP  (769px och uppåt)
+========================================================= */
+
+@media (min-width: 769px) {
+
+  .page-hero {
+    min-height: 450px;
+    padding: 50px;
+  }
+
+   .page-hero .eyebrow {
+    font-size: 1.2rem;
+  }
+
+  .section {
+    padding: 70px 0px;
+  }
+
+  .split-section {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: 50px;
+    padding: 10px;
+  }
+
+  /* Bilden följer textens höjd i stället för fast min-höjd */
+  .visual-panel {
+    min-height: 0;
+  }
+
+  .benefit-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    
+  }
+
+  .callout-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+}
+
+@media (min-width: 1600px) {
+
+    .page-hero .eyebrow {
+    font-size: 1.5rem;
+  }
+
+  .page-hero p {
+    max-width: 1100px;
+  }
+  
+  .section--cream .container {
+    max-width: 1800px;
+  }
+
+    .callout .container {
+    max-width: 1800px;
+  }
+}

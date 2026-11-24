@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../undersidor.css" />
+    <link rel="stylesheet" href="produkter.css" />
+    <link rel="stylesheet" href="../varukorg/cart.css" />
+    <link rel="stylesheet" href="../produkter/search.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Om oss – arCus bänkpapper</title>
+  </head>
+  <body>
+    <header>
+      <button
+        class="menu-button"
+        aria-label="Meny"
+        aria-expanded="false"
+        aria-controls="main-menu"
+      >
+        <span class="header-icon">☰</span>
+      </button>
+
+      <a href="/index.html">
+        <img src="../pictures/arcus-logo.jpg" alt="arCus - till startsidan" />
+      </a>
+      <nav class="header-nav" id="main-menu" aria-label="Huvudmeny">
+        <a href="../index.html">Hem</a>
+        <a href="../produkter/produkter.html" aria-current="page">Produkter</a>
+        <a href="../om-oss/om-oss.html">Om oss</a>
+        <a href="../leverans/leverans.html">Leverans</a>
+        <a href="../storkundsrabatt/storkundsrabatt.html">Storkundsrabatt</a>
+        <a href="../kontakt/kontakt.html">Kontakt</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="search-button" aria-label="Sök">
+          <i
+            class="header-icon fa-solid fa-magnifying-glass"
+            aria-hidden="true"
+          ></i>
+        </button>
+
+        <button class="cart-button" aria-label="Varukorg">
+          <i
+            class="header-icon fa-solid fa-shopping-cart"
+            aria-hidden="true"
+          ></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="product-section">
+        <div class="product-section__inner">
+          <div
+            class="product-filter"
+            id="product-filter"
+            role="group"
+            aria-label="Filtrera produkter"
+          ></div>
+          <p class="product-count" id="product-count" aria-live="polite"></p>
+          <div class="product-grid" id="product-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <img
+        class="footer-logo"
+        src="../pictures/arcus-logo.jpg"
+        alt="arCus logotyp"
+      />
+
+      <nav aria-label="Snabblänkar" class="quick-links">
+        <a href="../index.html">Hem</a>
+        <a href="../produkter/produkter.html">Produkter</a>
+        <a href="../om-oss/om-oss.html">Om oss</a>
+        <a href="../leverans/leverans.html">Leverans</a>
+        <a href="../storkundsrabatt/storkundsrabatt.html">Storkundsrabatt</a>
+        <a href="../kontakt/kontakt.html">Kontakt</a>
+      </nav>
+
+      <a href="https://www.instagram.com/arcusbankpapper/">
+        <img
+          class="footer-instagram"
+          src="../pictures/instagram.jpg"
+          alt="arCus på Instagram"
+        />
+      </a>
+    </footer>
+
+    <script src="produkter.js"></script>
+    <script src="../varukorg/cart.js"></script>
+    <script src="search.js"></script>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../undersidor.css" />
+    <link rel="stylesheet" href="kontakt.css" />
+     <link rel="stylesheet" href="../varukorg/cart.css">
+      <link rel="stylesheet" href="../produkter/search.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Kontakt – arCus bänkpapper</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <button
+        class="menu-button"
+        aria-label="Öppna menyn"
+        aria-expanded="false"
+        aria-controls="main-menu"
+      >
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+      <a class="site-logo" href="../index.html" aria-label="arCus – startsidan"
+        ><img src="../pictures/arcus-logo.jpg" alt="arCus bänkpapper"
+      /></a>
+      <nav class="site-nav" id="main-menu" aria-label="Huvudmeny">
+                <a href="../index.html">Hem</a>
+        <a href="../produkter/produkter.html">Produkter</a>
+        <a href="../om-oss/om-oss.html">Om oss</a>
+        <a href="../leverans/leverans.html">Leverans</a>
+        <a href="../storkundsrabatt/storkundsrabatt.html">Storkundsrabatt</a>
+        <a href="../kontakt/kontakt.html" aria-current="page">Kontakt</a>
+            </nav>
+          <div class="header-actions">
+        <button class="search-button" aria-label="Sök">
+          <i
+            class="header-icon fa-solid fa-magnifying-glass"
+            aria-hidden="true"
+          ></i>
+        </button>
+
+        <button class="cart-button" aria-label="Varukorg">
+          <i
+            class="header-icon fa-solid fa-shopping-cart"
+            aria-hidden="true"
+          ></i>
+        </button>
+      </div>
+    </header>
+    
+    <main>
+      <section class="page-hero">
+        <div class="page-hero__content">
+          <span class="eyebrow">Vi hjälper dig gärna</span>
+          <h1>Kontakta arCus</h1>
+          <p>
+            Har du frågor om produkter, beställning, storkundsrabatt eller
+            leverans? Hör gärna av dig.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-details">
+        <div class="container contact-layout">
+            <h2>Så når du oss</h2>
+            <p>Kontakta oss med din fråga så hjälper vi dig vidare.</p>
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <div>
+                <h3>E-post</h3>
+                <p>arcus@arcusbankpapper.se</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <div>
+                <h3>Telefon</h3>
+                <p>0703 615 802</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              <div>
+                <h3>Instagram</h3>
+                <p>
+                  <a href="https://www.instagram.com/arcusbankpapper/"
+                    >Följ arCus på Instagram</a
+                  >
+                </p>
+              </div>
+            </div>
+        <div>
+      </section>
+      
+      <section class="contact-form-section">
+        <div class="container">
+            <h2>Skicka en förfrågan</h2>
+            <p>Beskriv vad du behöver hjälp med.</p>
+            <form class="contact-form" action="#" method="post">
+              <div class="form-field">
+                <label for="name">Namn</label
+                ><input id="name" name="name" autocomplete="name" required />
+              </div>
+              <div class="form-field">
+                <label for="company">Företag (valfritt)</label
+                ><input
+                  id="company"
+                  name="company"
+                  autocomplete="organization"
+                />
+              </div>
+              <div class="form-field">
+                <label for="email">E-post</label
+                ><input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label for="topic">Vad gäller din fråga?</label
+                ><select id="topic" name="topic" required>
+                  <option value="">Välj ett ämne</option>
+                  <option value="products">Produkter och sortiment</option>
+                  <option value="order">Beställning</option>
+                  <option value="discount">Storkundsrabatt</option>
+                  <option value="delivery">Leverans</option>
+                  <option value="other">Övrigt</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="message">Meddelande</label
+                ><textarea id="message" name="message" required></textarea>
+              </div>
+              <button class="button" type="submit">Skicka förfrågan</button>
+              <p class="form-note">
+                Formuläret är en prototyp och behöver kopplas till en
+                formulärtjänst eller backend för att skicka meddelanden.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img
+        class="footer-logo"
+        src="../pictures/arcus-logo.jpg"
+        alt="arCus logotyp"
+      />
+
+      <nav aria-label="Snabblänkar" class="quick-links">
+        <a href="../index.html">Hem</a>
+        <a href="../produkter/produkter.html">Produkter</a>
+        <a href="../om-oss/om-oss.html">Om oss</a>
+        <a href="../leverans/leverans.html">Leverans</a>
+        <a href="../storkundsrabatt/storkundsrabatt.html">Storkundsrabatt</a>
+        <a href="../kontakt/kontakt.html">Kontakt</a>
+      </nav>
+
+      <a href="https://www.instagram.com/arcusbankpapper/">
+        <img
+          class="footer-instagram"
+          src="../pictures/instagram.jpg"
+          alt="arCus på Instagram"
+        />
+      </a>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="../varukorg/cart.js"></script>
+    <script src="../produkter/search.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,558 @@
+/* =========================================================
+   VARUKORG – cart.css
+   Laddas på ALLA sidor. Mobile first: panelen tar hela
+   bredden på mobil och blir en sidopanel från 600px.
+========================================================= */
+
+
+/* =========================
+   IKONEN I HEADERN
+========================= */
+
+.cart-toggle {
+  position: relative;
+}
+
+.cart-badge {
+  position: absolute;
+  top: 2px;
+  right: 0;
+
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+
+  background-color: var(--color-olive, #6f6b03);
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.cart-badge[hidden] {
+  display: none;
+}
+
+.cart-badge.is-bump {
+  animation: cart-bump 0.35s ease;
+}
+
+@keyframes cart-bump {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.4); }
+  100% { transform: scale(1); }
+}
+
+
+/* =========================
+   PANEL OCH BAKGRUND
+========================= */
+
+.cart-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1900;
+
+  background-color: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  visibility: hidden;
+
+  transition: opacity 0.25s ease, visibility 0.25s;
+}
+
+.cart-overlay.is-open {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.25s ease, visibility 0s;
+}
+
+.cart-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2000;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 100%;
+
+  /* Fast textstorlek, så att panelen inte växer med sidans 1.5rem på stora skärmar */
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-text, #202018);
+
+  background-color: white;
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.2);
+
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: transform 0.3s ease, visibility 0.3s;
+}
+
+/* Synlig direkt när den öppnas (annars går det inte att flytta fokus dit),
+   men först efter animationen när den stängs */
+.cart-drawer.is-open {
+  transform: translateX(0);
+  visibility: visible;
+  transition: transform 0.3s ease, visibility 0s;
+}
+
+/* Hindrar att sidan bakom panelen scrollar */
+body.cart-open {
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cart-drawer,
+  .cart-overlay {
+    transition: none;
+  }
+
+  .cart-badge.is-bump {
+    animation: none;
+  }
+}
+
+
+/* =========================
+   RUBRIK
+========================= */
+
+.cart-drawer__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+
+  padding: 15px 20px;
+
+  border-bottom: 1px solid var(--color-sand, #d0cfa8);
+}
+
+.cart-drawer__title {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.cart-drawer__count {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #55554a;
+}
+
+.cart-drawer__close {
+  flex-shrink: 0;
+
+  width: 48px;
+  height: 48px;
+  padding: 0;
+
+  font-size: 2rem;
+  line-height: 1;
+  color: inherit;
+
+  background: none;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cart-drawer__close:hover {
+  background-color: var(--color-cream, #f5f4e9);
+}
+
+
+/* =========================
+   INNEHÅLL
+========================= */
+
+.cart-drawer__body {
+  flex: 1;
+  overflow-y: auto;
+
+  padding: 10px 20px;
+}
+
+.cart-empty {
+  margin: 30px 0;
+
+  text-align: center;
+  color: #55554a;
+}
+
+.cart-empty[hidden],
+.cart-drawer__footer[hidden],
+.cart-note[hidden],
+.cart-summary[hidden] {
+  display: none;
+}
+
+/* Rabattmeddelanden: vad som är aktivt och vad som saknas för nästa nivå */
+
+.cart-promos {
+  display: grid;
+  gap: 10px;
+
+  margin-top: 8px;
+}
+
+.cart-promos:empty {
+  display: none;
+}
+
+.cart-promo {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  margin: 0;
+  padding: 12px 14px;
+
+  font-size: 0.95rem;
+  line-height: 1.45;
+
+  background-color: var(--color-cream, #f5f4e9);
+  border: 1px dashed var(--color-sand-dark, #afb47c);
+  border-radius: 8px;
+}
+
+.cart-promo--active {
+  background-color: #eef3df;
+  border: 1px solid var(--color-green, #456412);
+}
+
+.cart-promo__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  width: 26px;
+  height: 26px;
+
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: white;
+
+  background-color: var(--color-sand-dark, #afb47c);
+  border-radius: 50%;
+}
+
+.cart-promo--active .cart-promo__icon {
+  background-color: var(--color-green, #456412);
+}
+
+.cart-promo__text {
+  display: grid;
+  gap: 2px;
+}
+
+.cart-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  align-items: start;
+  gap: 14px;
+
+  padding: 18px 0;
+
+  border-bottom: 1px solid var(--color-sand, #d0cfa8);
+}
+
+/* Liten bild till vänster. Bilden skalas ner för att rymmas, aldrig upp. */
+
+.cart-item__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 72px;
+  height: 72px;
+  padding: 6px;
+  overflow: hidden;
+
+  background-color: white;
+  border: 1px solid var(--color-sand, #d0cfa8);
+  border-radius: 6px;
+}
+
+.cart-item__image img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.cart-item__image.is-missing {
+  background-color: var(--color-cream, #f5f4e9);
+}
+
+.cart-item__main {
+  display: grid;
+  gap: 12px;
+
+  min-width: 0;
+}
+
+.cart-item__info p {
+  margin: 0;
+}
+
+.cart-item__name {
+  font-family: Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.cart-item__label {
+  margin-top: 2px !important;
+
+  font-size: 0.95rem;
+  color: #55554a;
+}
+
+.cart-item__unit-price {
+  margin-top: 2px !important;
+
+  font-size: 0.9rem;
+  color: #55554a;
+}
+
+.cart-item__controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 15px;
+}
+
+.cart-qty {
+  display: flex;
+  align-items: center;
+
+  border: 2px solid var(--color-olive, #6f6b03);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.cart-qty__btn {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+
+  font: inherit;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--color-olive, #6f6b03);
+
+  background-color: white;
+  border: 0;
+  cursor: pointer;
+}
+
+.cart-qty__btn:hover:not(:disabled) {
+  background-color: var(--color-cream, #f5f4e9);
+}
+
+.cart-qty__btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.cart-qty__value {
+  min-width: 44px;
+
+  font-weight: bold;
+  text-align: center;
+
+  border-left: 1px solid var(--color-sand, #d0cfa8);
+  border-right: 1px solid var(--color-sand, #d0cfa8);
+  line-height: 44px;
+}
+
+.cart-item__line-price {
+  margin: 0 0 0 auto;
+
+  font-family: Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: var(--color-olive, #6f6b03);
+}
+
+.cart-item__remove {
+  flex-basis: 100%;
+  justify-content: flex-start;
+}
+
+
+/* =========================
+   SUMMA OCH KNAPPAR
+========================= */
+
+.cart-drawer__footer {
+  display: grid;
+  gap: 12px;
+
+  padding: 15px 20px 20px;
+
+  background-color: var(--color-cream, #f5f4e9);
+  border-top: 1px solid var(--color-sand, #d0cfa8);
+}
+
+/* Delsumma och rabattrader ovanför totalen */
+
+.cart-summary {
+  display: grid;
+  gap: 4px;
+
+  margin: 0;
+  padding-bottom: 10px;
+
+  font-size: 0.95rem;
+  border-bottom: 1px solid var(--color-sand, #d0cfa8);
+}
+
+.cart-summary__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.cart-summary dt,
+.cart-summary dd {
+  margin: 0;
+}
+
+.cart-summary__row--discount {
+  font-weight: bold;
+  color: var(--color-green, #456412);
+}
+
+.cart-total {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  margin: 0;
+
+  font-size: 1.1rem;
+}
+
+.cart-total__value {
+  font-family: Georgia, serif;
+  font-size: 1.6rem;
+  color: var(--color-olive, #6f6b03);
+}
+
+.cart-note {
+  margin: 0;
+  padding: 10px 12px;
+
+  font-size: 0.95rem;
+
+  background-color: white;
+  border: 1px solid var(--color-sand-dark, #afb47c);
+  border-radius: 6px;
+}
+
+.cart-checkout {
+  width: 100%;
+  min-height: 56px;
+
+  font: inherit;
+  font-size: 1.05rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cart-drawer__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px 15px;
+}
+
+/* Textknappar (Fortsätt handla, Töm, Ta bort) */
+
+.cart-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0;
+
+  font: inherit;
+  font-size: 0.95rem;
+  color: var(--color-olive, #6f6b03);
+  text-decoration: underline;
+
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.cart-link:hover {
+  opacity: 0.7;
+}
+
+.cart-drawer button:focus-visible {
+  outline: 3px solid var(--color-green, #456412);
+  outline-offset: 2px;
+}
+
+
+/* =========================
+   MEDDELANDE FÖR SKÄRMLÄSARE
+========================= */
+
+.cart-announcer {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
+/* =========================================================
+   SIDOPANEL  (600px och uppåt)
+========================================================= */
+
+@media (min-width: 600px) {
+
+  .cart-drawer {
+    width: 440px;
+  }
+
+  .cart-item {
+    grid-template-columns: 84px minmax(0, 1fr);
+  }
+
+  .cart-item__image {
+    width: 84px;
+    height: 84px;
+  }
+
+}
