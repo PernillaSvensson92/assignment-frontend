@@ -362,3 +362,58 @@
   }
 
 }
+
+/* formulär CSS */
+
+.form-error {
+  margin: 6px 0 0;
+
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #a32a1b;
+}
+
+.form-field input[aria-invalid="true"],
+.form-field select[aria-invalid="true"],
+.form-field textarea[aria-invalid="true"] {
+  border-color: #a32a1b;
+}
+
+.form-status {
+  margin: 0;
+}
+
+.form-status:empty {
+  display: none;
+}
+
+.form-status--success,
+.form-status--error {
+  padding: 14px 16px;
+
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.form-status--success {
+  color: var(--color-green, #456412);
+  background-color: #eef3df;
+  border: 1px solid var(--color-green, #456412);
+}
+
+.form-status--error {
+  color: #a32a1b;
+  background-color: #fbeceb;
+  border: 1px solid #a32a1b;
+}
+
+.contact-form .button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+/* Dolt skräppostfält */
+.form-hp {
+  position: absolute;
+  left: -9999px;
+}

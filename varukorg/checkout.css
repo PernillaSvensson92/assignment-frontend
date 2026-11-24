@@ -1,0 +1,294 @@
+/* =========================================================
+   BESTÄLLNINGSFÖRFRÅGAN – checkout.css
+   Laddas på ALLA sidor, tillsammans med cart.css.
+   Mobile first: helskärm på mobil, ruta i mitten från 600px.
+========================================================= */
+
+.checkout {
+  /* Eget typsnitt/storlek så att sidans 1.5rem på stora skärmar inte slår igenom */
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-text, #202018);
+
+  background-color: white;
+  border: 0;
+}
+
+.checkout::backdrop {
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+body:has(dialog.checkout[open]) {
+  overflow: hidden;
+}
+
+.checkout__header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+
+  padding: 12px 20px;
+
+  background-color: white;
+  border-bottom: 1px solid var(--color-sand, #d0cfa8);
+}
+
+.checkout__header h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.checkout__close {
+  flex-shrink: 0;
+
+  width: 48px;
+  height: 48px;
+  padding: 0;
+
+  font-size: 2rem;
+  line-height: 1;
+  color: inherit;
+
+  background: none;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.checkout__close:hover {
+  background-color: var(--color-cream, #f5f4e9);
+}
+
+.checkout__body {
+  padding: 20px;
+}
+
+.checkout__body[hidden] {
+  display: none;
+}
+
+.checkout :focus-visible {
+  outline: 3px solid var(--color-green, #456412);
+  outline-offset: 2px;
+}
+
+
+/* Sammanfattning */
+
+.checkout-summary {
+  padding: 14px 16px;
+
+  background-color: var(--color-cream, #f5f4e9);
+  border: 1px solid var(--color-sand, #d0cfa8);
+  border-radius: 8px;
+}
+
+.checkout-summary__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.checkout-summary__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+
+  padding: 6px 0;
+
+  font-size: 0.95rem;
+}
+
+.checkout-summary__row small {
+  display: block;
+  color: #55554a;
+}
+
+.checkout-summary__row--discount {
+  font-weight: bold;
+  color: var(--color-green, #456412);
+}
+
+.checkout-summary__total {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  margin: 8px 0 0;
+  padding-top: 10px;
+
+  border-top: 1px solid var(--color-sand-dark, #afb47c);
+}
+
+.checkout-summary__total strong {
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  color: var(--color-olive, #6f6b03);
+}
+
+.checkout__note {
+  margin: 16px 0;
+  font-size: 0.95rem;
+}
+
+
+/* Formulär (samma utseende som kontaktformuläret) */
+
+.checkout-form {
+  display: grid;
+  gap: 16px;
+}
+
+.checkout-form .form-field {
+  display: grid;
+  gap: 6px;
+}
+
+.checkout-form label {
+  font-weight: bold;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+  width: 100%;
+  min-height: 52px;
+  padding: 10px 14px;
+
+  font: inherit;
+  /* 16px minimum hindrar att iOS zoomar in vid fokus */
+  font-size: 1.1rem;
+  color: inherit;
+
+  background-color: white;
+  border: 2px solid var(--color-olive, #6f6b03);
+  border-radius: 6px;
+}
+
+.checkout-form textarea {
+  resize: vertical;
+}
+
+.checkout-form input[aria-invalid="true"] {
+  border-color: #a32a1b;
+}
+
+.checkout-form__row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.checkout .form-error {
+  margin: 0;
+
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #a32a1b;
+}
+
+.checkout .form-hp {
+  position: absolute;
+  left: -9999px;
+}
+
+.checkout__status {
+  margin: 0;
+}
+
+.checkout__status:empty {
+  display: none;
+}
+
+.checkout__status--error {
+  padding: 14px 16px;
+
+  font-weight: bold;
+  color: #a32a1b;
+
+  background-color: #fbeceb;
+  border: 1px solid #a32a1b;
+  border-radius: 8px;
+}
+
+.checkout__submit,
+.checkout__done-close {
+  width: 100%;
+  min-height: 56px;
+
+  font: inherit;
+  font-size: 1.05rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.checkout__submit:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.checkout__back {
+  justify-self: center;
+  min-height: 44px;
+  padding: 0;
+
+  font: inherit;
+  color: var(--color-olive, #6f6b03);
+  text-decoration: underline;
+
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.checkout__done {
+  text-align: center;
+}
+
+.checkout__done-title {
+  margin-top: 20px;
+}
+
+
+/* Ruta i mitten (600px och uppåt) */
+
+@media (min-width: 600px) {
+
+  .checkout {
+    width: 600px;
+    max-width: calc(100vw - 40px);
+    height: auto;
+    max-height: calc(100vh - 40px);
+    margin: auto;
+
+    border-radius: 12px;
+  }
+
+  .checkout__body {
+    padding: 24px;
+  }
+
+  .checkout-form__row {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .checkout__done-close {
+    width: auto;
+    min-width: 200px;
+  }
+
+}

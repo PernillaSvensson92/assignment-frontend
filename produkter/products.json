@@ -340,7 +340,7 @@
     "category": "massageoljor",
     "discount": "oil6",
     "name": "Föllinge Neutral",
-    "description": "En massageolja utan eteriska oljor. Utmärkt att doftsätta med egna eteriska oljor.",
+    "description": "En massageolja utan eteriska oljor. Utmärkt att doftsätta med egna eteriska oljor. Säljs i 1000ml flaskor",
     "image": "../pictures/neutral.png",
     "imageAlt": "Föllinge Neutral",
     "unit": "st",
@@ -357,7 +357,7 @@
     "category": "massageoljor",
     "discount": "oil6",
     "name": "Föllinge Harmony",
-    "description": "Ökar välmåendet, löser upp stress och skapar förutsättningar för harmoni och balans.",
+    "description": "Ökar välmåendet, löser upp stress och skapar förutsättningar för harmoni och balans. Säljs i 1000ml flaskor",
     "image": "../pictures/harmony.png",
     "imageAlt": "Föllinge Harmony",
     "unit": "st",
@@ -366,7 +366,7 @@
         "id": "follinge-harmony-1000-ml",
         "label": "1000 ml",
         "price": 500,
-        "outOfStock": true
+        "outOfStock": false
       }
     ]
   },
@@ -375,7 +375,7 @@
     "category": "massageoljor",
     "discount": "oil6",
     "name": "Föllinge Relaxing",
-    "description": "En lugnande olja som löser upp muskelspänningar och stress. Främjar en god natts sömn.",
+    "description": "En lugnande olja som löser upp muskelspänningar och stress. Främjar en god natts sömn. Säljs i 1000ml flaskor",
     "image": "../pictures/relaxing.png",
     "imageAlt": "Föllinge Relaxing",
     "unit": "st",
@@ -392,7 +392,7 @@
     "category": "massageoljor",
     "discount": "oil6",
     "name": "Föllinge Warming",
-    "description": "Ger en värmande känsla till muskler och leder. Kan med fördel användas vid reumatiska smärtor och kalla fötter.",
+    "description": "Ger en värmande känsla till muskler och leder. Kan med fördel användas vid reumatiska smärtor och kalla fötter. Säljs i 1000ml flaskor",
     "image": "../pictures/warming.png",
     "imageAlt": "Föllinge Warming",
     "unit": "st",

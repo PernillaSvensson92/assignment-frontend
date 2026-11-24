@@ -329,7 +329,7 @@
         <dl class="cart-summary" hidden></dl>
         <p class="cart-total"><span>Totalt</span><strong class="cart-total__value"></strong></p>
         <p class="cart-note" role="status" hidden></p>
-        <button class="button cart-checkout" type="button">Gå till kassan</button>
+        <button class="button cart-checkout" type="button">Gå till beställning</button>
         <div class="cart-drawer__links">
           <button class="cart-link" type="button" data-action="continue">Fortsätt handla</button>
           <button class="cart-link" type="button" data-action="clear">Töm varukorgen</button>
@@ -491,9 +491,11 @@
   function checkout() {
     document.dispatchEvent(new CustomEvent("cart:checkout", { detail: snapshot() }));
 
-    // Tills kassan finns: tala om att det är en prototyp
-    el.note.hidden = false;
-    el.note.textContent = "Kassan är inte kopplad än – det här är en prototyp.";
+    // checkout.js öppnar beställningsformuläret. Saknas det: visa ett meddelande.
+    if (!window.Checkout) {
+      el.note.hidden = false;
+      el.note.textContent = "Beställning är inte tillgänglig just nu.";
+    }
   }
 
 

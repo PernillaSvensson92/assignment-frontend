@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../undersidor.css" />
     <link rel="stylesheet" href="kontakt.css" />
-     <link rel="stylesheet" href="../varukorg/cart.css">
-      <link rel="stylesheet" href="../produkter/search.css">
+    <link rel="stylesheet" href="../varukorg/cart.css">
+    <link rel="stylesheet" href="../varukorg/checkout.css" />
+    <link rel="stylesheet" href="../produkter/search.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -92,14 +93,14 @@
                 </p>
               </div>
             </div>
-        <div>
+        </div>
       </section>
       
       <section class="contact-form-section">
         <div class="container">
             <h2>Skicka en förfrågan</h2>
             <p>Beskriv vad du behöver hjälp med.</p>
-            <form class="contact-form" action="#" method="post">
+            <form class="contact-form" action="https://formspree.io/f/maeolzpk" method="POST">
               <div class="form-field">
                 <label for="name">Namn</label
                 ><input id="name" name="name" autocomplete="name" required />
@@ -137,14 +138,17 @@
                 <label for="message">Meddelande</label
                 ><textarea id="message" name="message" required></textarea>
               </div>
+              <input
+                class="form-hp"
+                type="text"
+                name="_gotcha"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+              />
               <button class="button" type="submit">Skicka förfrågan</button>
-              <p class="form-note">
-                Formuläret är en prototyp och behöver kopplas till en
-                formulärtjänst eller backend för att skicka meddelanden.
-              </p>
             </form>
           </div>
-        </div>
       </section>
     </main>
     <footer>
@@ -175,6 +179,7 @@
     <script src="../script.js"></script>
     <script src="../varukorg/cart.js"></script>
     <script src="../produkter/search.js"></script>
+    <script src="kontakt-form.js"></script>
+    <script src="../varukorg/checkout.js"></script>
   </body>
 </html>
-

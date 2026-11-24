@@ -101,12 +101,11 @@ function cardTemplate(product) {
   const selectLabel = product.selectLabel || "Storlek";
 
   // Priset står med i rullistan så att man kan jämföra alla alternativ.
-  // Det står FÖRST, för på smala skärmar klipps slutet av långa alternativ.
-  const options = product.variants
+    const options = product.variants
     .map((variant) => {
       const text = variant.outOfStock
         ? `${variant.label} (restad)`
-        : `${formatPrice(variant.price)} · ${variant.label}`;
+        : `${variant.label} · ${formatPrice(variant.price)} `;
       return `<option value="${escapeHtml(variant.id)}"${variant.outOfStock ? " disabled" : ""}>${escapeHtml(text)}</option>`;
     })
     .join("");
