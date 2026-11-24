@@ -327,8 +327,9 @@ footer {
 }
 
 .quick-links {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 6px 20px;
 }
 
 .quick-links a {
