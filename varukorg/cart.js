@@ -45,6 +45,9 @@
   // Kundvagnsknappen i headern (aria-label="Varukorg")
   const TOGGLE_SELECTOR = '.header-actions button[aria-label^="Varukorg"]';
 
+  // Adressen till den här filen, så att cart.css kan hittas i samma mapp
+  const SCRIPT_URL = document.currentScript ? document.currentScript.src : "";
+
   let items = load();
 
   let toggle = null;
@@ -302,6 +305,19 @@
 
   /* ---------- Panelen ---------- */
 
+  // Skydd: om cart.css inte har laddats (fel sökväg, gammal cache eller saknad
+  // länk på sidan) lägger vi in den själva, så varukorgen aldrig visas utan stil.
+  function ensureStyles() {
+    if (window.getComputedStyle(drawer).position === "fixed") return;
+    if (!SCRIPT_URL || document.querySelector("link[data-cart-css]")) return;
+
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = new URL("cart.css", SCRIPT_URL).href;
+    link.dataset.cartCss = "";
+    document.head.append(link);
+  }
+
   function buildDrawer() {
     overlay = document.createElement("div");
     overlay.className = "cart-overlay";
@@ -342,6 +358,7 @@
     announcer.setAttribute("aria-live", "polite");
 
     document.body.append(overlay, drawer, announcer);
+    ensureStyles();
 
     el.list = drawer.querySelector(".cart-list");
     el.empty = drawer.querySelector(".cart-empty");
