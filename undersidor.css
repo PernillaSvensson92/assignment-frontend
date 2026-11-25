@@ -288,3 +288,147 @@ button:focus-visible {
   }
 }
 
+/* =========================================================
+   SVÄVANDE MENYKNAPP – meny.css
+   Länka in SIST på alla sidor (efter undersidor.css och
+   sidans egen CSS). Gäller bara under 768px, precis som din
+   nuvarande mobilmeny. Från 768px gäller din vanliga meny.
+========================================================= */
+
+@media (max-width: 767px) {
+
+  /* Knappen: rund, nere till höger, nås med tummen */
+  .menu-button {
+    position: fixed;
+    right: 16px;
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+    z-index: 1500;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.5rem;
+    color: white;
+
+    background-color: var(--color-olive, #6f6b03);
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+  }
+
+  .menu-button .header-icon {
+    font-size: 1.6rem;
+    line-height: 1;
+  }
+
+  /* Knappen ligger inte längre i headern, så loggan och ikonerna
+     behåller sina platser i mitten och till höger */
+  header > a {
+    grid-column: 2;
+  }
+
+  header .header-actions {
+    grid-column: 3;
+  }
+
+  /* Menyn: en ruta som öppnas ovanför knappen.
+     "header nav" i väljaren behövs för att gå före regeln "header nav.is-open" */
+  header nav.header-nav,
+  header nav.site-nav {
+    position: fixed;
+    top: auto;
+    right: 16px;
+    bottom: calc(92px + env(safe-area-inset-bottom, 0px));
+    left: auto;
+    z-index: 1499;
+
+    display: flex;
+    flex-direction: column;
+
+    width: min(300px, calc(100vw - 32px));
+    min-width: 0;
+    max-height: calc(100vh - 130px);
+    max-height: calc(100dvh - 130px);
+    margin: 0;
+    padding: 8px;
+    overflow-y: auto;
+
+    background-color: white;
+    border: 1px solid var(--color-sand-dark, #afb47c);
+    border-radius: 12px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.3);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0s 0.2s;
+  }
+
+  header nav.header-nav.is-open,
+  header nav.site-nav.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0s;
+  }
+
+  header nav.header-nav a,
+  header nav.site-nav a,
+  header nav.header-nav.is-open a,
+  header nav.site-nav.is-open a {
+    display: flex;
+    align-items: center;
+
+    min-height: 52px;
+    padding: 8px 16px;
+
+    font-size: 1.1rem;
+    color: var(--color-text, #202018);
+    text-decoration: none;
+
+    border-radius: 8px;
+  }
+
+  header nav.header-nav a:hover,
+  header nav.site-nav a:hover {
+    background-color: var(--color-cream, #f5f4e9);
+  }
+
+  header nav.header-nav a[aria-current="page"],
+  header nav.site-nav a[aria-current="page"] {
+    font-weight: bold;
+    color: var(--color-olive, #6f6b03);
+    background-color: var(--color-cream, #f5f4e9);
+  }
+
+  /* Göms när varukorg eller sök är öppen, så de inte hamnar ovanpå */
+  body.cart-open .menu-button,
+  body.search-open .menu-button,
+  body.cart-open header nav.header-nav,
+  body.cart-open header nav.site-nav,
+  body.search-open header nav.header-nav,
+  body.search-open header nav.site-nav {
+    display: none;
+  }
+
+  /* Så att sidans sista innehåll inte döljs bakom knappen */
+  body {
+    padding-bottom: 84px;
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  header nav.header-nav,
+  header nav.site-nav {
+    transition: none;
+  }
+}

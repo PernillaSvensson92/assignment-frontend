@@ -90,14 +90,13 @@
 }
 
 .split-section {
-  max-width: none;                                    
-  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
-  gap: 60px;
+  max-width: none;
 }
 
 
+/* Mobil: bilden får en lagom höjd ovanför texten */
 .visual-panel {
-  min-height: 420px;
+  min-height: 260px;
 }
 
 
@@ -252,9 +251,12 @@
 
 .callout-inner {
   display: flex;
+  flex-direction: column;    /* mobil: text ovanför knapp */
   align-items: center;
   justify-content: center;   /* text och knapp samlas i mitten */
-  gap: 40px;
+  gap: 25px;
+
+  text-align: center;
 }
 .callout h2 {
   margin-bottom: 10px;
@@ -282,7 +284,11 @@
   }
 
   .section {
-    padding: 50px 0px;
+    padding: 50px 15px;
+  }
+
+  .visual-panel {
+    min-height: 340px;
   }
 
   .benefit {
@@ -323,6 +329,7 @@
     gap: 50px;
     padding: 10px;
   }
+
 
   /* Bilden följer textens höjd i stället för fast min-höjd */
   .visual-panel {
