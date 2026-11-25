@@ -264,6 +264,62 @@ body:has(dialog.checkout[open]) {
 }
 
 
+/* Val av leverans */
+
+.checkout-delivery {
+  display: grid;
+  gap: 8px;
+
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+}
+
+.checkout-delivery legend {
+  margin-bottom: 8px;
+  padding: 0;
+
+  font-weight: bold;
+}
+
+.checkout-delivery__option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  min-height: 52px;
+  padding: 10px 14px;
+
+  font-weight: normal !important;
+
+  background-color: white;
+  border: 2px solid var(--color-olive, #6f6b03);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.checkout-delivery__option:has(input:checked) {
+  background-color: var(--color-cream, #f5f4e9);
+  border-color: var(--color-green, #456412);
+}
+
+.checkout-delivery__option input {
+  flex-shrink: 0;
+
+  width: 22px;
+  min-height: 22px !important;
+  height: 22px;
+  padding: 0 !important;
+
+  accent-color: var(--color-olive, #6f6b03);
+}
+
+.checkout-delivery__error[hidden] {
+  display: none;
+}
+
+
 /* Ruta i mitten (600px och uppåt) */
 
 @media (min-width: 600px) {
@@ -292,3 +348,5 @@ body:has(dialog.checkout[open]) {
   }
 
 }
+
+

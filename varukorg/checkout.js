@@ -95,6 +95,18 @@
             <label for="co-phone">Telefon</label>
             <input id="co-phone" name="phone" type="tel" autocomplete="tel" required />
           </div>
+          <fieldset class="checkout-delivery">
+            <legend>Hur vill du ha din leverans?</legend>
+            <label class="checkout-delivery__option">
+              <input type="radio" name="delivery" value="arCus-bilen" required />
+              <span>Leverans med arCus-bilen</span>
+            </label>
+            <label class="checkout-delivery__option">
+              <input type="radio" name="delivery" value="Skickas med DHL" required />
+              <span>Skickas med DHL</span>
+            </label>
+            <p class="checkout-delivery__error form-error" hidden>Välj hur du vill ha din leverans.</p>
+          </fieldset>
           <div class="form-field">
             <label for="co-address">Leveransadress</label>
             <input id="co-address" name="address" autocomplete="street-address" required />
@@ -152,12 +164,15 @@
 
     dialog.addEventListener("close", onClose);
     el.form.addEventListener("submit", onSubmit);
+    el.form.addEventListener("change", (event) => {
+      if (event.target.name === "delivery") el.form.querySelector(".checkout-delivery__error").hidden = true;
+    });
     el.form.addEventListener("input", (event) => {
       if (event.target.getAttribute("aria-invalid")) validateField(event.target);
     });
     el.form.addEventListener("focusout", (event) => {
       const field = event.target;
-      if (field.matches("input, textarea") && (field.getAttribute("aria-invalid") || field.value)) validateField(field);
+      if (field.matches("input:not([type=radio]), textarea") && (field.getAttribute("aria-invalid") || field.value)) validateField(field);
     });
   }
 
@@ -241,8 +256,13 @@
     event.preventDefault();
     if (sending) return;
 
-    const fields = [...el.form.querySelectorAll("input, textarea")];
+    const fields = [...el.form.querySelectorAll("input:not([type=radio]), textarea")];
     const invalid = fields.filter((field) => !validateField(field));
+
+    const deliveryError = el.form.querySelector(".checkout-delivery__error");
+    const deliveryChosen = el.form.querySelector('[name="delivery"]:checked');
+    deliveryError.hidden = Boolean(deliveryChosen);
+    if (!deliveryChosen) invalid.unshift(el.form.querySelector('[name="delivery"]'));
 
     if (invalid.length) {
       invalid[0].focus();
@@ -261,9 +281,8 @@
 
     const data = new FormData(el.form);
     data.set("_subject", `Orderförfrågan från ${data.get("name")}`);
-    data.set("order", linesText(items, p));
+    data.set("order", linesText(items, p) + `\nLeverans: ${data.get("delivery")}`);
     data.set("order_total", kr(p.total));
-    data.set("order_json", JSON.stringify({ items: items.map(({ productId, variantId, name, label, price, quantity }) => ({ productId, variantId, name, label, price, quantity })), pricing: { subtotal: p.subtotal, discounts: p.discounts, total: p.total } }));
 
     sending = true;
     el.submit.disabled = true;
